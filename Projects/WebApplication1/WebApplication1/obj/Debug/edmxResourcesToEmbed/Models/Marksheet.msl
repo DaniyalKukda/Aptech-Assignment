@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="marksheetModelStoreContainer" CdmEntityContainer="marksheetEntities1">
+    <EntitySetMapping Name="students">
+      <EntityTypeMapping TypeName="marksheetModel.student">
+        <MappingFragment StoreEntitySet="student">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="rollno" ColumnName="rollno" />
+          <ScalarProperty Name="course" ColumnName="course" />
+          <ScalarProperty Name="math" ColumnName="math" />
+          <ScalarProperty Name="urdu" ColumnName="urdu" />
+          <ScalarProperty Name="english" ColumnName="english" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="obtain" ColumnName="obtain" />
+          <ScalarProperty Name="percentage" ColumnName="percentage" />
+          <ScalarProperty Name="grade" ColumnName="grade" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="picture" ColumnName="picture" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

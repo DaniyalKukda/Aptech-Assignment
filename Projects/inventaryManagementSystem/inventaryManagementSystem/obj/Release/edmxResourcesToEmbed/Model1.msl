@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="imsModelStoreContainer" CdmEntityContainer="imsEntities">
+    <FunctionImportMapping FunctionImportName="GetPurchaseReport1" FunctionName="imsModel.Store.GetPurchaseReport1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="imsModel.GetPurchaseReport1_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="product_qty" ColumnName="product_qty" />
+          <ScalarProperty Name="product_unit" ColumnName="product_unit" />
+          <ScalarProperty Name="product_price" ColumnName="product_price" />
+          <ScalarProperty Name="purchase_party" ColumnName="purchase_party" />
+          <ScalarProperty Name="purchase_type" ColumnName="purchase_type" />
+          <ScalarProperty Name="expire_date" ColumnName="expire_date" />
+          <ScalarProperty Name="product_total" ColumnName="product_total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

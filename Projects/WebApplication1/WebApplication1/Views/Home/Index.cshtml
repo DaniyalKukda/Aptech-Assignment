@@ -1,0 +1,55 @@
+﻿@model WebApplication1.Models.student
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <table>
+        <tr>
+            <td>Student Name</td>
+            <td>@Html.TextAreaFor(x => x.name)</td>
+            <td>@Html.ValidationMessageFor(x => x.name)</td>
+        </tr>
+        <tr>
+            <td>Student Roll no#</td>
+            <td>@Html.EditorFor(x => x.rollno)</td>
+            <td>@Html.ValidationMessageFor(x => x.rollno)</td>
+        </tr>
+        <tr>
+            <td>Student Course</td>
+            <td>@Html.TextAreaFor(x => x.course)</td>
+            <td>@Html.ValidationMessageFor(x => x.course)</td>
+        </tr>
+        <tr>
+            <td>Math Marks</td>
+            <td>@Html.EditorFor(x => x.math)</td>
+            <td>@Html.ValidationMessageFor(x => x.math)</td>
+        </tr>
+        <tr>
+            <td>Urdu Marks</td>
+            <td>@Html.EditorFor(x => x.urdu)</td>
+            <td>@Html.ValidationMessageFor(x => x.urdu)</td>
+        </tr>
+        <tr>
+            <td>English Marks</td>
+            <td>@Html.EditorFor(x => x.english)</td>
+            <td>@Html.ValidationMessageFor(x => x.english)</td>
+        </tr>
+        <tr>
+            <td>Select Picture</td>
+            <td><input type="file" name="pic" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Insert Data" /></td>
+            <td>@Html.ActionLink("Show Data", "Fetch", "Home")</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>@ViewBag.msg</td>
+        </tr>
+    </table>
+}
+
